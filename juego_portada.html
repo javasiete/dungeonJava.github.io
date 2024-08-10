@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/juego_portada.css" /> <!-- Link al documento CSS -->
+  <title>Portada</title> <!-- Titulo Pestaña -->
+</head>
+
+<body>
+    <div class="principal">
+      <h2>Selecciona un Personaje</h2>
+
+      <div class="personajes">
+
+        <div class="image-container" onclick="selectImage(this, 'Benjamín')">
+          <img id="benja" class="imagen" src="./imgs/Benja.png" width="200px" alt="Imagen 1" onclick="playSound1()">
+          
+        </div>
+        <div class="image-container" onclick="selectImage(this, 'Jazmín')">
+          <img id="jaz" class="imagen" src="./imgs/Jaz.png" width="200px" alt="Imagen 2" onclick="playSound2()">
+        </div>
+
+        <audio id="benjaAudio" src="./sonidos/benjaAudio.mp3"></audio>
+        <audio id="jazAudio" src="./sonidos/jazAudio.mp3"></audio>
+        
+      
+      </div>
+
+      <div id="selectionText" class="selection-text"></div>
+
+      <a id="div_boton" class="oculto" href="./juego_aventura.html">
+        <div id="boton_empezar">
+          Empezar
+        </div>
+
+      </a>
+      
+  
+
+
+      
+
+
+    </div> <!-- Fin Div Principal -->
+    
+
+    
+
+   
+    <script src="https://kit.fontawesome.com/c3d324dd6f.js" crossorigin="anonymous"></script> <!-- Link a la pagina Favicom -->
+    <script src="javascript/juego.js"></script> <!-- Link al documento JS -->
+</body>
+
+</html>

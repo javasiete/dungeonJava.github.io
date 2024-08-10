@@ -1,0 +1,87 @@
+* {
+	margin: 10px 0 0 0;
+	background-color: lightgray;
+}
+
+h2 {
+	color: rgb(255, 102, 0);
+	font-size: 40px;
+}
+
+.principal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.personajes {
+	padding-top: 10px;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 60px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+
+
+.image-container {
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+}
+.image-container img {
+	filter: grayscale(100%);
+	transition: all 0.1s ease;
+	cursor: pointer;
+	border: 5px solid lightgrey; /*Asi no se mueve*/
+}
+.image-container img:hover {
+	filter: grayscale(0%);
+	transition: all 0.3s ease;
+}
+.image-container img.selected {
+	border: 5px solid yellow;
+	filter: grayscale(0%);
+}
+.selection-text {
+	margin-top: 20px;
+	padding: 10px;
+	display: none;
+	font-size: 20px;
+}
+.selection-text.active {
+	display: block;
+}
+
+.oculto {
+	display: none;
+}
+
+.visible {
+	display:block;
+}
+
+#div_boton {
+	text-decoration:none;
+	color:black;
+}
+#boton_empezar {
+	background: rgb(179, 174, 170);
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration:none;
+}
+#boton_empezar:hover {
+	background-color: rgba(255, 102, 0, 0.781);;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+

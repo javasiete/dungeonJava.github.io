@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tablero {
+    border: 8px solid rgba(104, 100, 100, 0.938);
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+
+/* Estilos para las celdas del tablero */
+td {
+    width: 80px; /* Ajusta según el tamaño que prefieras */
+    height: 80px; /* Ajusta según el tamaño que prefieras */
+    text-align: center;
+    vertical-align: middle;
+    background-color: black; /* Fondo negro por defecto */
+    color: white; /* Color de los números */
+    position: relative;
+    background-size: cover; /* Ajusta la imagen para que esté contenida y mantenga su proporción */
+    background-position: center; /* Centra la imagen en el cuadrado */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0px; /* Asegura que no haya margen adicional */
+    padding: 0px; /* Asegura que no haya padding adicional */
+    /*border: 1px solid #ccc; Lo Saque para que esten pegados los bordes */ 
+  
+}
+
+td img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto */
+    object-fit: cover; /* Cubre todo el área de la celda sin deformar la imagen */
+}
+
+#tablero td { /*TAMAÑO DE LOS CUADRADOS*/
+    /* border: 1px solid black; Lo Saque para que esten pegados los bordes */ 
+    text-align: center;
+    font-size: 24px;
+
+    width: 90px;
+    height: 90px;
+    position: relative;
+
+    background-size: cover; /* Asegura que la imagen cubre todo el cuadrado */
+    background-position: center; /* Centra la imagen en el cuadrado */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+#tablero td span {
+    position: relative;
+    z-index: 2; /* Asegura que los números están encima del redondel */
+}
+
+.redondel {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(205, 50, 50);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1; /* Asegura que el redondel está detrás de los números */
+}
+
+.verde {
+    border-color: rgb(1, 0, 0) !important;
+}
+
+.verde-arriba {
+    border-top-color: rgb(1, 0, 0) !important;
+}
+
+.verde-abajo {
+    border-bottom-color: rgb(1, 0, 0) !important;
+}
+
+.verde-izquierda {
+    border-left-color: rgb(1, 0, 0) !important;
+}
+
+.verde-derecha {
+    border-right-color: rgb(1, 0, 0) !important;
+}
+
+.botonera_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.botonera_2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    background-color: rgb(255, 207, 48); /* Color original */
+    padding: 6px 16px;
+}
+
+button.disabled {
+    background-color: grey; /* Color cuando el movimiento no es permitido */
+}
+
+.transparente {
+    background-color: transparent !important;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/*FILA 1*/
+#cuadro-1 {
+    background-image: url('/imgs/b1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-2 {
+    background-image: url('/imgs/b2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-3 {
+    background-image: url('/imgs/b1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-4 {
+    background-image: url('/imgs/b2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*FILA 2*/
+#cuadro-5 {
+    background-image: url('/imgs/l1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-6 {
+    background-image: url('/imgs/d1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-7 {
+    background-image: url('/imgs/r1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-8 {
+    background-image: url('/imgs/m2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*FILA 3*/
+#cuadro-9 {
+    background-image: url('/imgs/l1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-10 {
+    background-image: url('/imgs/u1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-11 {
+    background-image: url('/imgs/m1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-12 {
+    background-image: url('/imgs/b4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*FILA 4*/
+#cuadro-13 {
+    background-image: url('/imgs/m2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-14 {
+    background-image: url('/imgs/l1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-15 {
+    background-image: url('/imgs/d1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-16 {
+    background-image: url('/imgs/b2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*FILA 5*/
+#cuadro-17 {
+    background-image: url('/imgs/b3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-18 {
+    background-image: url('/imgs/d1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-19 {
+    background-image: url('/imgs/m3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuadro-20 {
+    background-image: url('/imgs/b4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

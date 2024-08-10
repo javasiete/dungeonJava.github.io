@@ -1,0 +1,11 @@
+* {
+	margin: 25;
+	background-color: lightgray;
+}
+
+
+.todo-junto{
+	display: flex;
+
+}
+

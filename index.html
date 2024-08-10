@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/tablero.css" />
+        <title>Tablero con Movimiento</title>
+    </head>
+
+    <body>
+        <table id="tablero"></table>
+
+        <div class="botonera_1">
+            <button onclick="mover('arriba')" class="boton_movimiento" id="boton-arriba">Arriba</button>
+            
+            <div class="botonera_2">
+                <button onclick="mover('izquierda')" class="boton_movimiento" id="boton-izquierda">Izquierda</button>
+                <button onclick="mover('abajo')" class="boton_movimiento" id="boton-abajo">Abajo</button>
+                <button onclick="mover('derecha')" class="boton_movimiento" id="boton-derecha">Derecha</button>
+            </div>
+            
+        </div>
+
+        <button onclick="mostrarFondo()" class="boton_movimiento">Mostrar Fondo</button>
+        
+
+
+        <script src="javascript/tablero.js"></script> <!-- Link al documento JS -->
+    </body>
+
+</html>

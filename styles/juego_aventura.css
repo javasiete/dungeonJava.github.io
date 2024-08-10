@@ -1,0 +1,70 @@
+* {
+	margin: 0px 0 0 0;
+	background-color: lightgray;
+}
+
+h2 {
+	color: rgb(255, 102, 0);
+	font-size: 40px;
+}
+
+.oculto {
+	display: none;
+}
+.visible {
+	display:block;
+}
+
+.principal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	background-color: rgb(174, 105, 238);
+	padding: 20px 5px 20px 5px;
+}
+
+.ficha_jugador {
+	display:flex;
+	flex-direction: column;
+	width: 500px;
+	align-items: center;
+}
+.mas_info_jugador {
+	display: flex;
+	gap: 20px;
+	padding: 30px 0px;
+}
+.tabla_estado_jugador{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.seleccion_opciones {
+	display: flex;
+	flex-direction: column;
+	background-color: aqua;
+	gap: 10px;
+}
+
+#boton {
+	background: rgb(179, 174, 170);
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+#boton:hover {
+	background-color: rgba(255, 102, 0, 0.781);;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+	transform: scale(1.1);
+}
+
+
+
